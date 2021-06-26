@@ -23,9 +23,14 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const loadData = (dataFromNewExpense) => {
+    console.log(dataFromNewExpense);
+  };
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onLoadDataFromNewExpense={loadData}/>
       <Expenses data={expenses} />
     </div>
   );
