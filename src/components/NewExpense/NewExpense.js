@@ -2,6 +2,7 @@ import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
+
   const loadData = (dataFromExpenseForm) => {
     const data = {
       ...dataFromExpenseForm,
@@ -9,6 +10,7 @@ const NewExpense = (props) => {
     };
     props.onLoadDataFromNewExpense(data);
   };
+  
   return (
     <div className="new-expense">
       <ExpenseForm onLoadDataFromExpenseForm={loadData} />
