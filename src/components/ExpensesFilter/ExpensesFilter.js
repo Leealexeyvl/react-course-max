@@ -3,11 +3,9 @@ import React from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-    // const [changedSelectData, setChangedData] = useState("");
 
     const selectInputChangedHandler = (event) => {
         const data = event.target.value;
-        // setChangedData(data);
         props.onLoadDataFromFilter(data);
     }
 
